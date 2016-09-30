@@ -1,0 +1,3 @@
+- @notes.each do |note|
+  %h2= link_to note.title, note             # in haml indentation in a loop matters , this line is indented compared to the previous line
+  %p=  time_ago_in_words(note.created_at)
